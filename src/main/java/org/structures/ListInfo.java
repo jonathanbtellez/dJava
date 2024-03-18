@@ -1,6 +1,7 @@
 package org.structures;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListInfo {
@@ -41,6 +42,11 @@ public class ListInfo {
         System.out.println("Guts is in the position number: "+names.indexOf("Guts"));
         //names.clear();
 
+        Iterator<String> namesIterator = names.iterator();
+
+        while (namesIterator.hasNext()){
+            System.out.println("Name "+ namesIterator.next());
+        }
    }
 }
 
